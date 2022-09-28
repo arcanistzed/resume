@@ -1,0 +1,19 @@
+{
+    "semi": true,
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "useTabs": true,
+    "trailingComma": "all",
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": [
+                "*.html"
+            ],
+            "options": {
+                "printWidth": 1000000
+            }
+        }
+    ]
+}
