@@ -118,6 +118,16 @@ i {
   .logo {
     display: none;
   }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  aside {
+    border-right: none;
+    border-top: 1px solid;
+    -o-border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
+       border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
+  }
 }
 @media screen and (min-width: 1024px) {
   html {
