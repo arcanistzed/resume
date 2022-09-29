@@ -28,6 +28,7 @@ header {
 
 	hgroup {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
@@ -37,11 +38,14 @@ header {
 }
 
 .logo {
-	height: 4rem;
+	width: 4rem;
 }
 
-address {
+address, nav {
 	font-style: normal;
+	a {
+		white-space: nowrap;
+	}
 }
 
 header,
@@ -89,12 +93,22 @@ i {
 }
 
 @media screen {
-	html {
-		margin: 5rem 30%;
+	body {
+		font-size: large;
 	}
 }
 @media screen and (max-width: 1024px) {
 	html {
-		margin: 2rem 2rem;
+		margin: 2rem;
+	}
+
+	.logo {
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px) {
+	html {
+		margin: 2rem auto;
+		width: 11in; // width of page
 	}
 }
