@@ -14,7 +14,6 @@ body {
   margin: 1rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.25;
-  font-size: smaller;
   color: var(--color-text);
 }
 
@@ -39,19 +38,34 @@ header {
   width: 4rem;
 }
 
-address, nav {
+address,
+nav {
   font-style: normal;
 }
-address a, nav a {
+address a,
+nav a {
   white-space: nowrap;
 }
 
 header,
 section:not(:last-child) {
-  padding-bottom: 0.5ch;
+  padding-bottom: 1ch;
   border-bottom: 1px solid;
-  -o-border-image: linear-gradient(to right, var(--color-one), var(--color-two), transparent) 1;
-     border-image: linear-gradient(to right, var(--color-one), var(--color-two), transparent) 1;
+  -o-border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
+     border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 37.5% 1fr;
+  grid-gap: 1ch;
+}
+
+aside {
+  padding-right: 1ch;
+  border-right: 1px solid;
+  -o-border-image: linear-gradient(to bottom, transparent, var(--color-one), var(--color-two), transparent) 1;
+     border-image: linear-gradient(to bottom, transparent, var(--color-one), var(--color-two), transparent) 1;
 }
 
 h1,
