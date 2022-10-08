@@ -86,7 +86,7 @@ h2 {
 }
 
 p,
-ul {
+:not(ul) > ul {
 	margin-block: 0;
 	font-size: smaller;
 }
@@ -104,12 +104,19 @@ i {
 	font-size: smaller;
 }
 
+ul.grid {
+	--grid-columns: 2;
+	display: grid;
+	grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+	grid-column-gap: 1.5rem;
+}
+
 @media screen {
 	body {
 		font-size: large;
 	}
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 780px) {
 	html {
 		margin: 2rem;
 	}
@@ -129,9 +136,9 @@ i {
 		border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 780px) {
 	html {
 		margin: 2rem auto;
-		width: 11in; // width of page
+		width: 8.5in; // width of page
 	}
 }
