@@ -136,6 +136,9 @@ ul.grid {
     -o-border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
        border-image: linear-gradient(to right, transparent, var(--color-one), var(--color-two), transparent) 1;
   }
+  address a, nav a {
+    line-height: 2;
+  }
 }
 @media screen and (min-width: 780px) {
   html {
