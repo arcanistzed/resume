@@ -8,13 +8,16 @@
 	--color-text: #333;
 	--color-one: hsl(315, 50%, 33%);
 	--color-two: hsl(260, 50%, 50%);
+	--color-background: hsl(300, 10%, 100%);
+	background-color: var(--color-background);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-text: #fff;
 		--color-one: hsl(315, 50%, 67%);
-		--color-two: hsl(260, 50%, 67%);
+		--color-two: hsl(260, 50%, 90%);
+		--color-background: hsl(300, 10%, 10%);
 	}
 
 	.logo {
