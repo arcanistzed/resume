@@ -19,9 +19,6 @@
     --color-two: hsl(260, 50%, 90%);
     --color-background: hsl(300, 10%, 10%);
   }
-  .logo {
-    filter: invert(1);
-  }
 }
 body {
   margin: 1rem;
@@ -53,10 +50,6 @@ header {
 }
 .top a:hover {
   text-decoration: underline;
-}
-
-.logo {
-  height: 4rem;
 }
 
 .row {
@@ -94,7 +87,7 @@ h6 {
 
 h1,
 h2 {
-  margin-top: 1ch;
+  margin-top: 0.5ch;
 }
 
 h1 {
@@ -139,9 +132,6 @@ ul {
 @media screen and (max-width: 780px) {
   html {
     margin: 2rem;
-  }
-  .logo {
-    display: none;
   }
   address a,
   nav a {
